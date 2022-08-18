@@ -1,0 +1,27 @@
+img{
+    width: 100%;
+}
+
+.footer{
+    &__redes{
+        font-size: 3rem;
+        text-align: center;
+    }
+    &__descripcion{
+        text-align: center;
+    }
+    }
+    
+    .contenedor-icono{
+        text-align: center;
+        
+    }
+
+    main{
+        padding-bottom: 1rem;
+        position: relative;
+        width: 100%;
+        min-height: 1px;
+        min-height: calc(100vh - 70px - 15vh);
+        background-color: $primary;
+    }

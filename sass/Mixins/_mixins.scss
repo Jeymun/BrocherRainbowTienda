@@ -1,0 +1,27 @@
+@mixin texto($fuente,$padding-top) {
+    font-size: $fuente;
+    padding-top: $padding-top;
+    text-decoration: none;
+    color: $accent;
+}
+
+@mixin titulo {
+    font-size: 2.5rem;
+    padding-top: 30px;
+    text-decoration: none;
+    color: $accent;
+}
+
+.article--gen{
+    
+    &__titulo{
+        @include texto(2.5rem,30px);
+    }
+    &__subtitulo{
+        @include texto(2rem,1%);
+    }
+    &__texto{
+        @include texto(1.5rem,1%);
+    }
+
+}

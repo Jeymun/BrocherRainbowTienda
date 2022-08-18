@@ -1,0 +1,45 @@
+.article--gen__titulo {
+  font-size: 2.5rem;
+  padding-top: 30px;
+  text-decoration: none;
+  color: #ffffff;
+}
+.article--gen__subtitulo {
+  font-size: 2rem;
+  padding-top: 1%;
+  text-decoration: none;
+  color: #ffffff;
+}
+.article--gen__texto {
+  font-size: 1.5rem;
+  padding-top: 1%;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+img {
+  width: 100%;
+}
+
+.footer__redes {
+  font-size: 3rem;
+  text-align: center;
+}
+.footer__descripcion {
+  text-align: center;
+}
+
+.contenedor-icono {
+  text-align: center;
+}
+
+main {
+  padding-bottom: 1rem;
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  min-height: calc(100vh - 70px - 15vh);
+  background-color: #13181F;
+}
+
+/*# sourceMappingURL=style.css.map */
