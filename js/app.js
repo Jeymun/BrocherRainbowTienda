@@ -52,3 +52,18 @@ for (let i = 1; i <= 15; i++) {
     alert(`El valor de I es ${i}`)
 }
 
+
+
+let precio = function (a, b){
+ return a * b;   
+};
+
+let resultado = precio(3, 6);
+ 
+console.log(resultado);
+
+const advertencia = function () {
+    return "Peligro"
+
+};
+
