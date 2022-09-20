@@ -108,3 +108,12 @@ for (const elemento of elementos){
     console.log(elemento.id);
     console.log(elemento.elemento);
 }
+
+[
+    {
+    "name" : "Javascript",
+    "boolen": true,
+    "entregas": ["desafios","complementario", "preentregas"]
+    },
+
+];
