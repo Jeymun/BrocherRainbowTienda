@@ -118,8 +118,20 @@ for (const elemento of elementos){
 
 ];
 
-const button = document.querySelector("button");
+const button = document.querySelector("#amm");
 
 button.onclick = function () {
-    alert("Compraste");
-}
+    alert("Agregate al carrito");
+};
+
+const buton= document.querySelector("#asd");
+
+buton.onclick = function () {
+    alert("Dislike");
+};
+
+const buton1 = document.querySelector("#asado");
+
+buton1.onclick = function () {
+    alert("Asado de miel");
+};
