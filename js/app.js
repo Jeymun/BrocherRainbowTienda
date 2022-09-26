@@ -1,15 +1,37 @@
 
+
+// JSON
+
+const producto1 ={
+  titulo : "Nekopara",
+  precio : 39,
+  disponible: true
+}
+
+const producto1Str = JSON.stringify(producto1)
+
+localStorage.setItem("producto" , producto1Str)
+
+// Formulario
+
 const formulario = document.getElementsByClassName("caja--index");
 
 console.log(formulario);
+
+
+// Delete
 
 const testdelete = document.querySelector(".testdelete");
 
 testdelete.remove();
 
+// Creando elemento desde javascript
+
  let agregar = document.createElement("p")
  agregar.innerHTML = "<h5>Test Dom</h5>";
  document.body.appendChild(agregar);
+
+// Botones de compra
 
  function comprarboton () {
     document.getElementById("comprarBoton").innerHTML = "Agregaste al carrito";
@@ -24,14 +46,4 @@ testdelete.remove();
   };
 
 
-
-const producto1 ={
-  titulo : "Nekopara",
-  precio : 39,
-  disponible: true
-}
-
-const producto1Str = JSON.stringify(producto1)
-
-localStorage.setItem("tienda" , producto1Str)
 
