@@ -68,3 +68,15 @@ btn2.addEventListener('click', () => {
     'success'
   )
 })
+
+
+// Usuario con destructuracion
+
+let cliente = {
+  nombre: "Miles",
+  apellido: "Morales",
+  edad: 35
+}
+
+let {nombre,apellido,edad} = cliente;
+console.log(nombre,apellido,edad)
