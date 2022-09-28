@@ -80,3 +80,8 @@ let cliente = {
 
 let {nombre,apellido,edad} = cliente;
 console.log(nombre,apellido,edad)
+
+let dinero = 500;
+let comprar = "Comprar";
+
+(dinero == 500) && (comprar== "Comprar") ? console.log("Podes comprar") : console.log("NO podes comprar")
