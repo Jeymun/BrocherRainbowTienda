@@ -85,3 +85,35 @@ let dinero = 500;
 let comprar = "Comprar";
 
 (dinero == 500) && (comprar== "Comprar") ? console.log("Podes comprar") : console.log("NO podes comprar")
+
+
+const contenedorProductos = document.getElementById('contenedor-productos')
+
+let carrito = []
+
+stockProductos.forEach((producto)) => {
+  const div = document.createElement('div')
+  div.classList.add('producto')
+  div.innerHTML = `
+  <img src=${producto.img} alt=""</img>
+  <h3>${producto.nombre}</h3>
+  <p>${producto.desc}</p>
+  <p class="precioProducto">Precio:$ $(producto.precio)</p>
+  <button id="agregar${producto.id}" class="boton-agregar">Agregar <i class="fas fa-shopping-cart></i></button>
+  `
+  contenedorProductos.appendChild(div)
+
+  const boton = document.getElementById('agregar${producto.id}')
+  
+
+  boton.addEventListener('click', () => {
+    agregarAlCarrito(producto.id)
+  })
+
+})
+
+const agregarAlCarrito = (prodId) => {
+  const item = stockProductos.find (prod) => prod.id === prodId)
+  carrito.push(item)
+  console.log(carrito)
+}
