@@ -101,6 +101,7 @@ li {
     font-size: 1.5rem;
 }
 
+
 #boton-carrito {
     border: none;
     color: royalblue;
@@ -108,16 +109,14 @@ li {
     background-color: white;
     border-radius: 50%;
     padding: 10px 20px;
-    transition:  all .3s;
+    transition: all .3s;
 }
-
 #boton-carrito:hover {
     cursor: pointer;
     color: white;
     background-color: royalblue;
 }
-
-#boton-carrito:focus{
+#boton-carrito:focus {
     outline: none;
 }
 
@@ -129,10 +128,9 @@ li {
     flex-wrap: wrap;
 }
 
-p{
+p {
     line-height: 1.8;
 }
-
 .producto {
     max-width: 20%;
     padding: 10px;
@@ -140,28 +138,25 @@ p{
     margin-bottom: 20px;
     box-shadow: 2px 6px 3px 3px rgba(0, 0, 0, 0.3);
 }
-
-.precioProducto{
+.precioProducto {
     font-weight: 700;
 }
-
-.boton-agregar{
+.boton-agregar {
     background-color: royalblue;
+    color: white;
     font-size: 18px;
     font-weight: 700;
     padding: 5px;
     border: none;
 }
-
-.boton-agregar:hover{
+.boton-agregar:hover {
     cursor: pointer;
 }
-
-.boton-agregar:focus{
+.boton-agregar:focus {
     outline: none;
 }
 
-.modal-contenedor{
+.modal-contenedor {
     position: fixed;
     top: 0;
     width: 100%;
@@ -175,12 +170,12 @@ p{
     visibility: hidden;
 }
 
-.modal-active{
+.modal-active {
     opacity: 1;
     visibility: visible;
 }
 
-.modal-carrito{
+.modal-carrito {
     position: relative;
     background-color: white;
     min-width: 500px;
@@ -189,7 +184,57 @@ p{
     transition: all .5s;
 }
 
-.modal-active .modal-carrito{
+.modal-active .modal-carrito {
     margin-top: 0;
 }
 
+.modal-carrito h3 {
+    color: royalblue;
+    padding-bottom: 5px;
+}
+.modal-carrito #carritoCerrar {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 20px;
+    color: royalblue;
+    border: none;
+    background-color: white;
+}
+.modal-carrito #carritoCerrar:hover {
+    cursor: pointer;
+}
+.modal-carrito #carritoCerrar:focus {
+    outline: none;
+}
+.modal-carrito .precioProducto {
+    padding-top: 10px;
+    
+}
+
+.productoEnCarrito {
+    border-left: 5px solid lightblue;
+    border-bottom-left-radius: 3px;
+    border-top-left-radius: 3px;
+    margin: 5px 0;
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.productoEnCarrito:hover {
+    border-left: 5px solid royalblue;
+}
+
+.boton-eliminar {
+    background-color: white;
+    color: red;
+    border: none;
+    font-size: 20px;
+}
+
+.boton-eliminar:hover {
+    cursor: pointer;
+}
+.boton-eliminar:focus {
+    outline: none;
+}
